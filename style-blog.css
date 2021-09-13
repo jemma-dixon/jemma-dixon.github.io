@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#blog_post {
+    background-color: #f5f5f5;
+    height: 100vh;
+    padding: 60px 0;
+}
+
+.container {
+    width: 1150px;
+    margin: auto;
+}
+
+.blog-header{
+    text-align: center;
+
+}
+
+
+.blog-header h1{
+    font-size: 52px;
+    font-weight:700;
+    position: relative;
+}
+
+
+.blog-header h1::after{
+    position: absolute;
+    content: "";
+    height: 5px;
+    width: 60px;
+    left: 50%;
+    bottom: -10px;
+    border-bottom: 2px solid tomato;
+    transform: translate(-50%);
+
+
+}
+
+.blog-header p {
+    width: 600px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    text-transform: capitalize;
+    margin-top: 20px;
+}
+
+.content-wrapper{
+    overflow:hidden;
+}
+
+.content-box{
+    width:334px;
+    float:left;
+    margin-right:30px;
+    margin-top:50px;
+    border: 2px solid rgb(56, 56, 56);
+    background-color: white;
+}
+
+.content-box:last-child{
+    margin-right: 0; 
+}
+
+.contentImg{
+    width:100%;
+   
+}
+
+.content-header{
+    padding: 0 15px;
+}
+
+.content-header h2{
+    font-size:24px; 
+    font-family: cursive; 
+    letter-spacing: 0.3px;
+    margin-top: 15px;
+}
+
+.content-header h5{
+    color: rgb(64, 192, 224);
+    font-size: 18px;
+    text-transform: capitalize;
+    padding-top: 10px;
+
+}
+
+.content-header p{
+    color: rgb(56, 56, 56);
+    text-transform:capitalize;
+    font-size:17px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.3;
+    padding-top: 10px;
+}
+
+.content-header button{
+    background-color: rgb(64, 192, 224);
+    color: whitesmoke;
+    outline: none;
+    padding: 10px 20px;
+    border: 1px solid rgb(64, 192, 224); 
+    font-size: 17px;
+    border-radius: 35px;
+    margin: 15px;
+    transition: .3s;
+    cursor: pointer;
+
+}
+
+
+.content-header button:hover{
+    background-color: white;
+    color: #333;
+}
