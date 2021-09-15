@@ -1,4 +1,4 @@
-# Enspiral Dev Academy Blog
+# Welcome to [Jemma Codes: Enspiral Dev Academy Blog](https://jemma-dixon.github.io/index.html)
 This website features both technical and cultural blogs where I document my process of learning how to code.
 
 You can visit the website [here](https://jemma-dixon.github.io/index.html).
