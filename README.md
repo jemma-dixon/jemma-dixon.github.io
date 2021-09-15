@@ -1,41 +1,19 @@
-<!DOCTYPE html>
-<html>
+![Banner](https://user-images.githubusercontent.com/77214034/133357514-30ee592d-85dc-40f4-ac65-5277c9085e28.png)
 
-<head>
-    <title>Stories and Legends (PAGE title) </title>
-    <meta charset="UTF-8">
-    <link href="your-stylesheet-link-here.css" rel="stylesheet" type="text/css">
-</head>
+## Welcome to [Jemma Codes: Enspiral Dev Academy Blog](https://jemma-dixon.github.io/index.html)
 
-<body>
-    <h1>The Story of Te Houtaewa (PAGE heading)</h1>
-    <h2>E kore e mau i a koe, he wae kai pakiaka. <em>A foot accustomed to running over roots makes the speediest
-            runner.</em> (Optional SUB title) </h2>
-    <h3>Thursday, 9 September 2021</h3>
 
-    <p>
-        Te Houtaewa was the fastest runner of his day and played many pranks on his peoples enemies. One morning his
-        mother wanted kumara for the hangi (earth oven) and asked Te Houtaewa to go to the gardens at Te Kao, a short
-        distance away. He agreed to fetch the kumara and told his mother to prepare the hangi.
-    </p>
-    <p>
-     
-       Instead of going to the nearby gardens, Te Houtaewa set off for Ahipara as he wanted to annoy some Te Rarawa
-        people who lived there. Carrying two large baskets for the kumara, he ran like the wind, completing the journey
-        over the hard sands of Te Oneroa a Tohe (Ninety Mile Beach) in the few hours it takes a good hangi to heat up
-        properly. On reaching Ahipara, he went straight to the people's kumara pataka (storehouse for the sweet
-        potatoes) situated at the foot of the hill Whangatauatia.
-    </p>
-    <p>
-        While Te Houtaewa was filling his baskets with kumara he was spotted stealing the kai (food). He was immediately
-        recognised.
-    </p>
+> This website features both technical and cultural blogs where I document my process of learning how to code.
 
-    <p>Another commit</p>
-    <p>Third commit</p>
-    <!-- this is a comment. -->
 
-</body>
+### Built with:
+- HTML5 UP! Design Template 
+- CSS
+- Google Fonts 
+- Photos downloaded from [Unsplash](https://unsplash.com/s/photos/france).
 
-</html>
 
+        
+      
+
+    
