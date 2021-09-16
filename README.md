@@ -7,7 +7,7 @@
 
 
 ### Built with:
-- HTML5 UP! Design Template 
+- HTML5 UP! Design Template: HTML, CSS, SCSS, Javascript.
 - CSS
 - Google Fonts 
 - Photos downloaded from [Unsplash](https://unsplash.com/s/photos/france).
