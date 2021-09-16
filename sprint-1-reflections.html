@@ -69,181 +69,333 @@
             <div class="box">
 
                 <h2>SPRINT ONE REFLECTIONS</h2>
-                
-
-<h3 id="command-line-primer">Command Line Primer</h3>
-<!-- Copy the answers you wrote in your temporary file earlier, under the sections below -->
-<h4 id="in-a-couple-of-sentences-how-would-you-describe-the-command-line-in-plain-english-can-you-think-of-an-analogy-for-it-">In a couple of sentences, how would you describe the command line in plain English? Can you think of an analogy for it?</h4>
-<ul>
-<li>The terminal is just related to using a tool on your computer.</li>
-<li><p>When I say terminal, I&#39;m referring to some text-based prompt where I can interact with my machine through text.</p>
-</li>
-<li><p><strong>Command Line:</strong> The computer program we use to input Git commands. On a Mac, it’s called Terminal. On a PC, it’s a non-native program that you download when you download Git for the first time (we’ll do that in the next section). In both cases, you type text-based commands, known as prompts, into the screen, instead of using a mouse.</p>
-</li>
-</ul>
-<p><strong>Definitions:</strong></p>
-<ol>
-<li><strong>Command Line Interface (CLI):</strong> For running commands on your computer.</li>
-<li><strong>Terminal:</strong> A Text-based interface to your computer. Originally an object, but now we use software terminals. (Analogy: Terminal = ATM)</li>
-<li><strong>Shell:</strong> The program/ the software that runs on the terminal. (Analogy: Shell = Software running on the ATM to make it work). The terminal has different shells that it can run.</li>
-<li>The terminal is a text interface. Think of a hacker scene in a movie.</li>
-<li>It allows you to do stuff you can already do. You can make a folder and save three files inside of it. i.e. html, css, and JS.</li>
-<li>The GUI allows us to do this in an easier, more accessible way.</li>
-<li>The terminal provides a &quot;mainline&quot; into the heart of our computer, giving us access to areas we normally don&#39;t interact with. It&#39;s not recommended to paste commands from the internet as you could accidentally erase some important stuff.</li>
-<li>We can view hidden files, things that won&#39;t show up to your average user if they&#39;re navigating using a graphical user interface.</li>
-</ol>
-<h3 id="did-you-stick-to-the-timebox-guidelines-if-not-what-change-would-you-make-next-time-">Did you stick to the timebox guidelines? If not, what change would you make next time?</h3>
-<p>I spent three days trying to figure out how to git push. It ended up being a problem related to creating an SSH key for authentication. I even spoke with a friend who has been a software engineer for the past five years, and she wasn&#39;t sure why I wasn&#39;t able to commit to Git. We both think it&#39;s related to needing to set up authentication. Today, Wednesday, I&#39;m strictly covering the timebox material to reduce stress and to see if I can find some answers within the provided material. My instructor is sick, too. We were scheduled to meet today, so fingers crossed this can happen. Update: Joseph helped me set up the correct SSH key! Yay!</p>
-<h3 id="name-5-commands-you-used-and-what-they-do">Name 5 commands you used, and what they do</h3>
-<ul>
-<li><strong>LS - List</strong> </li>
-<li>List - Use ls to list the contents of your current directory. Anytime you type ~ it will reference your home directory.</li>
-<li><strong>PW - Print Working Directory</strong></li>
-<li>Prints the path to the working directory (where you currently are). It&#39;s like a <strong>compass</strong>, it will tell you where you already are. If I want to know where I am specifically - <strong>PWD</strong> - that&#39;s the full path to where I currently am.</li>
-
-<span class="image featured"><img
-    src="https://images.unsplash.com/photo-1546570089-777fb6b884c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
-    alt="Laptop and coffee study image" /></span>
 
 
-<li><strong>CD</strong> / - <strong>Change Directory: Absolute path</strong></li>
-<li>This takes you to the root directory. Any path that begins with a slash is absolute. Everything is nested inside the root directory.</li>
-<li><strong>CD ~ Change Directory: Relative path</strong></li>
-<li>This takes you to your home directory.</li>
-<li><strong>MKDIR - Make Directory</strong></li>
-<li>This creates a new directory (or directories). I.e., you can make a new folder called Cats. Then another folder called Kittens. E.g.:</li>
-<li>mkdir Cats</li>
-<li>ls</li>
-<li>mkdir Kittens</li>
-<li>ls</li>
-</ul>
-<h1 id="install-and-explore-git">Install and Explore Git</h1>
-<!-- Copy your reflection answers into this file -->
-<h3 id="whats-the-difference-between-git-and-github-">Whats the difference between git and GitHub?</h3>
-<p>Git is a version control software that allows groups of people to work together on the same code, at the same time, without overwriting each other&#39;s work. It is not a programming language like JavaScript, or Ruby, or C#. It is software that you download - and programmers use a form of &#39;distributed version control&#39;, which means it manages changes to a project without overwriting any part of the project. Version control enables web developers to collaborate without writing over each other&#39;s work, and it provides an entire history of changes.</p>
-<ol>
-<li><strong>Understand what Git is</strong></li>
-</ol>
-<blockquote>
-<p><em>The most widely used Version Control Software is called Git</em></p>
-</blockquote>
-<ol>
-<li><strong>Understand what GitHub is</strong></li>
-</ol>
-<blockquote>
-<p><em>GitHub is a company that provides file hosting online</em></p>
-</blockquote>
-<ul>
-<li>For easy access and collaboration, web developers use GitHub (the largest code host on the planet) for storing and sharing code.</li>
-</ul>
-<p>So to conclude, <strong>Git is a (software) tool</strong> that you download while <strong>GitHub is a service</strong> that you sign up to.</p>
-<h3 id="can-you-think-of-an-analogy-to-describe-them-">Can you think of an analogy to describe them?</h3>
-<ul>
-<li>Like snapping a photo of a board game. Each picture is a &#39;save-point.&#39; This is what version control does. You have the freedom to change anything about your project. The project is tracked with version control.</li>
-<li>So a Version Control System is just software that helps you control (or manage) the different versions...of something (typically source code).</li>
-<li>the <em>centralized model</em> - all users connect to a central, master repository</li>
-<li>the <em>distributed model</em> - each user has the entire repository on their computer (i.e., Git).</li>
-</ul>
-<p><strong>Recap</strong></p>
-<ul>
-<li>Remember that the main point of a version control system is to help you maintain a detailed history of the project as well as the ability to work on different versions of it. Having a detailed history of a project is important because it lets you see the progress of the project over time. If needed, you can also jump back to any point in the project to recover data or files.</li>
-</ul>
-<h3 id="what-did-you-notice-about-your-own-learning-what-did-you-do-when-you-were-confused-or-blocked-">What did you notice about your own learning? What did you do when you were confused or blocked?</h3>
-<ol>
-<li>Read affirmations for cultivating a growth mindset. </li>
-<li>Ask for help.</li>
-<li>Google for solutions.</li>
-<li>Keep searching for alternative, simple solutions.</li>
-</ol>
-<h3 id="is-there-anything-you-d-do-differently-if-you-were-to-repeat-the-learning-exploration-again-">Is there anything you&#39;d do differently if you were to repeat the learning exploration again?</h3>
-<ol>
-<li>Have my authentication set up earlier. </li>
-<li>Focus on finishing the requirements faster, and then return for greater breadth of understanding.</li>
-</ol>
-<h1 id="branch-pull-merge">Branch, Pull, Merge</h1>
-<!-- Copy your reflection answers into this file -->
-<h3 id="what-is-main-">What is main?</h3>
-<p>All new source code repositories created on GitHub will be named &quot;main&quot; instead of &quot;master&quot; as part of the company&#39;s effort to remove unnecessary references to slavery and replace them with more inclusive terms.</p>
-<h3 id="why-create-a-branch-">Why create a Branch?</h3>
-<p>git branch - Working with multiple collaborators and want to make changes on your own? This command will let you build a new branch, or timeline of commits, of changes and file additions that are completely your own. Your title goes after the command. If you wanted a new branch called “cats” you’d type git branch cats.</p>
-<h3 id="how-would-you-describe-stage-and-commit-to-your-non-tech-savvy-friend-">How would you describe stage and commit to your non-tech-savvy friend?</h3>
-<p><a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/8d375d68-480f-4fc6-a7ff-3e7f8cdb88ec/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAT73L2G45O3KS52Y5%2F20210904%2Fus-west-2%2Fs3%2Faws4_request&amp;X-Amz-Date=20210904T002718Z&amp;X-Amz-Expires=86400&amp;X-Amz-Signature=d120ef0d1a5b1f6b2c801978ae13d1ca9ece39fa69a2f216d02ea0b4a3cbfde1&amp;X-Amz-SignedHeaders=host&amp;response-content-disposition=filename%20%3D%22Untitled.png%22">See image</a> </p>
-<h1 id="github-fork-clone">GitHub Fork &amp; Clone</h1>
-<!-- Answer the following questions -->
-<h3 id="what-are-some-examples-of-when-you-would-fork-">What are some examples of when you would fork?</h3>
-<p>A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project. Most commonly, forks are used to either propose changes to someone else&#39;s project or to use someone else&#39;s project as a starting point for your own idea.</p>
-<h3 id="did-you-have-any-moments-where-it-all-clicked-what-clicked-">Did you have any moments where it all clicked? What clicked?</h3>
-<p>Only when it works does it click! I need it to work for me versus stay stuck in Tutorial Hell.</p>
-<h1 id="setup-repo-create-blog">Setup Repo &amp; Create Blog</h1>
-<h3 id="reflect-on-this-activity-when-did-you-feel-frustrated-">Reflect on this activity. When did you feel frustrated?</h3>
-<p>I actually want to figure out how to upload my current website www.jemmadixoncodes.com to Git. I need to learn Handlebar documentation and figure out how to zip and unzip the file. This way, I can configure my blog with css, html etc. I need to create a functional Navbar and place to store my reflections related to this course. </p>
-<h3 id="if-you-didn-t-already-know-that-this-is-the-way-websites-are-made-was-it-what-you-pictured-how-does-the-reality-of-this-process-differ-from-your-preconceptions-">If you didn&#39;t already know that this is the way websites are made; was it what you pictured? How does the reality of this process differ from your preconceptions?</h3>
-<p>I&#39;m still figuring out how to get to this step... </p>
-<h1 id="thinking-like-a-programmer">Thinking like a programmer</h1>
-<p><strong>Learning Competencies</strong></p>
-<ul>
-<li>Understand the meaning of &#39;thinking like a developer.&#39;</li>
-<li>Understand flipped learning</li>
-</ul>
-<p><strong>Reflect</strong></p>
-<ul>
-<li><strong>What patterns do you notice about &#39;thinking like a programmer?&#39;</strong></li>
-<li>To think like a programmer is to focus on solutions. If this doesn&#39;t work, then try this. If that doesn&#39;t work, try X. </li>
-<li>Focus on learning how to solve problems versus learning syntax. </li>
-<li>Focus on one thing at a time.</li>
-<li>Apply the principle of &quot;just in time&quot; learning (don&#39;t try to learn it all)</li>
-<li>Before diving into the solution, create a plan.</li>
-<li>Break down large problems into smaller, more manageable chunks.</li>
-<li>Remember that errors and bugs are conducive to your development (and that programming is full of them!) Adopt a &#39;not yet&#39; attitude and go in with curiosity.</li>
-</ul>
-<blockquote>
-<p><strong><em>But what does this actually mean, to think like a programmer?</em></strong></p>
-</blockquote>
-<p>It means pretending to be the computer when you read code. There&#39;s an old joke: a programmer&#39;s wife tells him &quot;hey, we need a couple things from the grocery store. Get a loaf of bread, and if they have eggs, then get a dozen.&quot; The programmer goes to the store and comes back with a dozen loaves of bread.</p>
-<pre><code class="lang-jsx"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">groceryShop</span><span class="hljs-params">(loaves, storeHasEggs)</span> 
+                <h3 id="command-line-primer">Command Line Primer</h3>
+                <!-- Copy the answers you wrote in your temporary file earlier, under the sections below -->
+                <h4
+                    id="in-a-couple-of-sentences-how-would-you-describe-the-command-line-in-plain-english-can-you-think-of-an-analogy-for-it-">
+                    In a couple of sentences, how would you describe the command line in plain English? Can you think of
+                    an analogy for it?</h4>
+                <ul>
+                    <li>The terminal is just related to using a tool on your computer.</li>
+                    <li>
+                        <p>When I say terminal, I&#39;m referring to some text-based prompt where I can interact with my
+                            machine through text.</p>
+                    </li>
+                    <li>
+                        <p><strong>Command Line:</strong> The computer program we use to input Git commands. On a Mac,
+                            it’s called Terminal. On a PC, it’s a non-native program that you download when you download
+                            Git for the first time (we’ll do that in the next section). In both cases, you type
+                            text-based commands, known as prompts, into the screen, instead of using a mouse.</p>
+                    </li>
+                </ul>
+                <p><strong>Definitions:</strong></p>
+                <ol>
+                    <li><strong>Command Line Interface (CLI):</strong> For running commands on your computer.</li>
+                    <li><strong>Terminal:</strong> A Text-based interface to your computer. Originally an object, but
+                        now we use software terminals. (Analogy: Terminal = ATM)</li>
+                    <li><strong>Shell:</strong> The program/ the software that runs on the terminal. (Analogy: Shell =
+                        Software running on the ATM to make it work). The terminal has different shells that it can run.
+                    </li>
+                    <li>The terminal is a text interface. Think of a hacker scene in a movie.</li>
+                    <li>It allows you to do stuff you can already do. You can make a folder and save three files inside
+                        of it. i.e. html, css, and JS.</li>
+                    <li>The GUI allows us to do this in an easier, more accessible way.</li>
+                    <li>The terminal provides a &quot;mainline&quot; into the heart of our computer, giving us access to
+                        areas we normally don&#39;t interact with. It&#39;s not recommended to paste commands from the
+                        internet as you could accidentally erase some important stuff.</li>
+                    <li>We can view hidden files, things that won&#39;t show up to your average user if they&#39;re
+                        navigating using a graphical user interface.</li>
+                </ol>
+                <h3 id="did-you-stick-to-the-timebox-guidelines-if-not-what-change-would-you-make-next-time-">Did you
+                    stick to the timebox guidelines? If not, what change would you make next time?</h3>
+                <p>I spent three days trying to figure out how to git push. It ended up being a problem related to
+                    creating an SSH key for authentication. I even spoke with a friend who has been a software engineer
+                    for the past five years, and she wasn&#39;t sure why I wasn&#39;t able to commit to Git. We both
+                    think it&#39;s related to needing to set up authentication. Today, Wednesday, I&#39;m strictly
+                    covering the timebox material to reduce stress and to see if I can find some answers within the
+                    provided material. My instructor is sick, too. We were scheduled to meet today, so fingers crossed
+                    this can happen. Update: Joseph helped me set up the correct SSH key! Yay!</p>
+                <h3 id="name-5-commands-you-used-and-what-they-do">Name 5 commands you used, and what they do</h3>
+                <ul>
+                    <li><strong>LS - List</strong> </li>
+                    <li>List - Use ls to list the contents of your current directory. Anytime you type ~ it will
+                        reference your home directory.</li>
+                    <li><strong>PW - Print Working Directory</strong></li>
+                    <li>Prints the path to the working directory (where you currently are). It&#39;s like a
+                        <strong>compass</strong>, it will tell you where you already are. If I want to know where I am
+                        specifically - <strong>PWD</strong> - that&#39;s the full path to where I currently am.</li>
+
+                    <span class="image featured"><img
+                            src="https://images.unsplash.com/photo-1546570089-777fb6b884c4?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80"
+                            alt="Laptop and coffee study image" /></span>
+
+
+                    <li><strong>CD</strong> / - <strong>Change Directory: Absolute path</strong></li>
+                    <li>This takes you to the root directory. Any path that begins with a slash is absolute. Everything
+                        is nested inside the root directory.</li>
+                    <li><strong>CD ~ Change Directory: Relative path</strong></li>
+                    <li>This takes you to your home directory.</li>
+                    <li><strong>MKDIR - Make Directory</strong></li>
+                    <li>This creates a new directory (or directories). I.e., you can make a new folder called Cats. Then
+                        another folder called Kittens. E.g.:</li>
+                    <li>mkdir Cats</li>
+                    <li>ls</li>
+                    <li>mkdir Kittens</li>
+                    <li>ls</li>
+                </ul>
+                <h1 id="install-and-explore-git">Install and Explore Git</h1>
+                <!-- Copy your reflection answers into this file -->
+                <h3 id="whats-the-difference-between-git-and-github-">Whats the difference between git and GitHub?</h3>
+                <p>Git is a version control software that allows groups of people to work together on the same code, at
+                    the same time, without overwriting each other&#39;s work. It is not a programming language like
+                    JavaScript, or Ruby, or C#. It is software that you download - and programmers use a form of
+                    &#39;distributed version control&#39;, which means it manages changes to a project without
+                    overwriting any part of the project. Version control enables web developers to collaborate without
+                    writing over each other&#39;s work, and it provides an entire history of changes.</p>
+                <ol>
+                    <li><strong>Understand what Git is</strong></li>
+                </ol>
+                <blockquote>
+                    <p><em>The most widely used Version Control Software is called Git</em></p>
+                </blockquote>
+                <ol>
+                    <li><strong>Understand what GitHub is</strong></li>
+                </ol>
+                <blockquote>
+                    <p><em>GitHub is a company that provides file hosting online</em></p>
+                </blockquote>
+                <ul>
+                    <li>For easy access and collaboration, web developers use GitHub (the largest code host on the
+                        planet) for storing and sharing code.</li>
+                </ul>
+                <p>So to conclude, <strong>Git is a (software) tool</strong> that you download while <strong>GitHub is a
+                        service</strong> that you sign up to.</p>
+                <h3 id="can-you-think-of-an-analogy-to-describe-them-">Can you think of an analogy to describe them?
+                </h3>
+                <ul>
+                    <li>Like snapping a photo of a board game. Each picture is a &#39;save-point.&#39; This is what
+                        version control does. You have the freedom to change anything about your project. The project is
+                        tracked with version control.</li>
+                    <li>So a Version Control System is just software that helps you control (or manage) the different
+                        versions...of something (typically source code).</li>
+                    <li>the <em>centralized model</em> - all users connect to a central, master repository</li>
+                    <li>the <em>distributed model</em> - each user has the entire repository on their computer (i.e.,
+                        Git).</li>
+                </ul>
+                <p><strong>Recap</strong></p>
+                <ul>
+                    <li>Remember that the main point of a version control system is to help you maintain a detailed
+                        history of the project as well as the ability to work on different versions of it. Having a
+                        detailed history of a project is important because it lets you see the progress of the project
+                        over time. If needed, you can also jump back to any point in the project to recover data or
+                        files.</li>
+                </ul>
+                <h3 id="what-did-you-notice-about-your-own-learning-what-did-you-do-when-you-were-confused-or-blocked-">
+                    What did you notice about your own learning? What did you do when you were confused or blocked?</h3>
+                <ol>
+                    <li>Read affirmations for cultivating a growth mindset. </li>
+                    <li>Ask for help.</li>
+                    <li>Google for solutions.</li>
+                    <li>Keep searching for alternative, simple solutions.</li>
+                </ol>
+                <h3 id="is-there-anything-you-d-do-differently-if-you-were-to-repeat-the-learning-exploration-again-">Is
+                    there anything you&#39;d do differently if you were to repeat the learning exploration again?</h3>
+                <ol>
+                    <li>Have my authentication set up earlier. </li>
+                    <li>Focus on finishing the requirements faster, and then return for greater breadth of
+                        understanding.</li>
+                </ol>
+                <h3 id="branch-pull-merge">Branch, Pull, Merge</h3>
+                <!-- Copy your reflection answers into this file -->
+                <h3 id="what-is-main-">What is main?</h3>
+                <p>All new source code repositories created on GitHub will be named &quot;main&quot; instead of
+                    &quot;master&quot; as part of the company&#39;s effort to remove unnecessary references to slavery
+                    and replace them with more inclusive terms.</p>
+                <h3 id="why-create-a-branch-">Why create a Branch?</h3>
+                <p>git branch - Working with multiple collaborators and want to make changes on your own? This command
+                    will let you build a new branch, or timeline of commits, of changes and file additions that are
+                    completely your own. Your title goes after the command. If you wanted a new branch called “cats”
+                    you’d type git branch cats.</p>
+                <h3 id="how-would-you-describe-stage-and-commit-to-your-non-tech-savvy-friend-">How would you describe
+                    stage and commit to your non-tech-savvy friend?</h3>
+                </p>
+                <p>This <a
+                        href="https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049">Introduction
+                        to Git</a> is <strong>amazing</strong>. I found it in the second week. It's exceptionally clear
+                    and easy to follow.</p>
+                <p>Other advice I'd give would be to copy and paste a successful Git Push from your terminal into the
+                    Notion application so that you have
+                    a successful working example.
+                </p>
+                <p>Staging is just preparing your files to be committed to GitHub. <br>
+                    There are three steps: 1. Stage 2. Commit. 3. Push.</p>
+                The process of pushing something to Git looks like this: <br>
+                $ pwd: Print working directory - Shows you your folders and files in terminal representation (GUI)
+                versus File Explorer. <br>
+                $ ls: list - lists all folders and files in your working directory. <br>
+                $ cd: change directory - allows you to move into the specific file you want.<br>
+                $ cd: change again to move down a level in the diretory. It might take you $cd four times to get to the
+                right file.<br>
+                $ git status - tells you (based on source control) if you have files to stage. You 'push' from your<br>
+                local device to a remote repository, and you 'pull' remote files from GitHub onto your remote
+                device.<br>
+                git status might say: <br>
+                $ git status <br>
+                On branch main <br>
+                Your branch is up to date with 'origin/main'. <br>
+
+                Changes not staged for commit: <br>
+                (use "git add <file>..." to update what will be committed) <br>
+                    (use "git restore <file>..." to discard changes in working directory) <br>
+                        modified: index.html <br>
+                        so then you will write $ git add . to stage all the files. <br>
+                        Then you write $ git commit -m "Commit message" so you can track what changes you've made. <br>
+                        Last step is to $ git push. <br>
+                        Now you can go to GitHub and you will see that your local work has been 'pushed' to a remote
+                        repository. <br>
+
+                        <h3 id="github-fork-clone">GitHub Fork &amp; Clone</h3>
+                        <!-- Answer the following questions -->
+                        <h3 id="what-are-some-examples-of-when-you-would-fork-">What are some examples of when you would
+                            fork?</h3>
+                        <p>A fork is a copy of a repository. Forking a repository allows you to freely experiment with
+                            changes without affecting the original project. Most commonly, forks are used to either
+                            propose changes to someone else&#39;s project or to use someone else&#39;s project as a
+                            starting point for your own idea.</p>
+                        <h3 id="did-you-have-any-moments-where-it-all-clicked-what-clicked-">Did you have any moments
+                            where it all clicked? What clicked?</h3>
+                        <p>Only when it works does it click! I need it to work for me versus stay stuck in Tutorial
+                            Hell.</p>
+                        <h1 id="setup-repo-create-blog">Setup Repo &amp; Create Blog</h1>
+                        <h3 id="reflect-on-this-activity-when-did-you-feel-frustrated-">Reflect on this activity. When
+                            did you feel frustrated?</h3>
+                        <p>I actually want to figure out how to upload my current website www.jemmadixoncodes.com to
+                            Git. I need to learn Handlebar documentation and figure out how to zip and unzip the file.
+                            This way, I can configure my blog with css, html etc. I need to create a functional Navbar
+                            and place to store my reflections related to this course. </p>
+                        <h3
+                            id="if-you-didn-t-already-know-that-this-is-the-way-websites-are-made-was-it-what-you-pictured-how-does-the-reality-of-this-process-differ-from-your-preconceptions-">
+                            If you didn&#39;t already know that this is the way websites are made; was it what you
+                            pictured? How does the reality of this process differ from your preconceptions?</h3>
+                        <p>I&#39;m still figuring out how to get to this step... </p>
+                        <h3 id="thinking-like-a-programmer">Thinking like a programmer</h3>
+                        <p><strong>Learning Competencies</strong></p>
+                        <ul>
+                            <li>Understand the meaning of &#39;thinking like a developer.&#39;</li>
+                            <li>Understand flipped learning</li>
+                        </ul>
+                        <p><strong>Reflect</strong></p>
+                        <ul>
+                            <li><strong>What patterns do you notice about &#39;thinking like a programmer?&#39;</strong>
+                            </li>
+                            <li>To think like a programmer is to focus on solutions. If this doesn&#39;t work, then try
+                                this. If that doesn&#39;t work, try X. </li>
+                            <li>Focus on learning how to solve problems versus learning syntax. </li>
+                            <li>Focus on one thing at a time.</li>
+                            <li>Apply the principle of &quot;just in time&quot; learning (don&#39;t try to learn it all)
+                            </li>
+                            <li>Before diving into the solution, create a plan.</li>
+                            <li>Break down large problems into smaller, more manageable chunks.</li>
+                            <li>Remember that errors and bugs are conducive to your development (and that programming is
+                                full of them!) Adopt a &#39;not yet&#39; attitude and go in with curiosity.</li>
+                        </ul>
+                        <blockquote>
+                            <p><strong><em>But what does this actually mean, to think like a programmer?</em></strong>
+                            </p>
+                        </blockquote>
+                        <p>It means pretending to be the computer when you read code. There&#39;s an old joke: a
+                            programmer&#39;s wife tells him &quot;hey, we need a couple things from the grocery store.
+                            Get a loaf of bread, and if they have eggs, then get a dozen.&quot; The programmer goes to
+                            the store and comes back with a dozen loaves of bread.</p>
+                        <pre><code class="lang-jsx"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">groceryShop</span><span class="hljs-params">(loaves, storeHasEggs)</span> 
 </span>{ <span class="hljs-keyword">if</span> (storeHasEggs === <span class="hljs-literal">true</span>) 
 { <span class="hljs-keyword">return</span> <span class="hljs-number">12</span> loaves; } 
 <span class="hljs-keyword">return</span> <span class="hljs-number">1</span> loaves; } A
 </code></pre>
-<ul>
-<li>It&#39;s something you learn over time by writing code and solving problems. I think that saying is another way to say that you need to think differently about problems and situations than you would in other areas of life. Programming has a unique way of thinking required to be successful. But it&#39;s not one tangible thing you can read a manual and learn. It varies depending on the language, the methodology and more.</li>
-<li>Thinking like a programmer isn&#39;t a skill. Its a habit. You start to think in terms of code the more you write code.</li>
-<li><strong>What does the internet say about flipped learning? What is flipped learning and flipped classroom? How do you think it will relate to your learning journey?</strong></li>
-<li>Flipped learning puts the onus on the student to learn. i.e., You are responsible for your learning journey.</li>
-<li>The internet: &quot;Look, others have commented on this in great detail, so I&#39;ll just throw in and note that there isn&#39;t one kind of good teaching. Lecturing and flipped classrooms can both be done lazily or with diligence can care. There is no monopoly on good teaching methods to be found in any single camp.&quot;</li>
-<li>Because people are weird: research has shown that students in classes that focus on active learning (often meaning discussing the materials with their classmates) <em>learn more but think they learn less</em> than students in lecture-based classes. There&#39;s actually a very recent study on this: <a href="https://www.pnas.org/content/116/39/19251">https://www.pnas.org/content/116/39/19251</a></li>
-<li>Research has also shown that most students dislike the idea of flipped courses initially, but that large majorities prefer them when they&#39;ve actually tried them.</li>
-</ul>
-<h3 id="what-is-your-process-so-far-for-solving-problems-">What is your process so far for solving problems?</h3>
-<ol>
-<li>Persistence </li>
-<li>Networking in with a more knowlegable other. </li>
-<li>Taking care of my health and prioritising sleep, exercise, nutrition. </li>
-<li>Not taking myself too seriously. </li>
-<li>Trying to enjoy the course and have fun. </li>
-</ol>
-<h1 id="introduce-yourself">Introduce yourself</h1>
-<p>Hello, my name is Jemma and I&#39;m currently based in Auckland. I spent some in France, Germany, and Italy in 2019 and came back to New Zealand in 2020, just one month before the fist lockdown. I just finished a Masters degree in English Literature (based on a French text), and I&#39;d love to travel again, perhaps being able to eventually work remotely. 
-I&#39;m not sure why I initially felt like tech wasn&#39;t for me, but I&#39;m interested in the connection between Art/Science/Philosophy/Tech/Ethics, and I enjoy learning new things and being challenged. I started teaching mysel some basic code at the beginning of 2021, and realised that if I want to take this seriously as a career, then partaking in a Bootcamp sounded like a good idea in terms of pace and intensity of learning, and also connecting to other people who are also interested in Tech. </p>
-<p>In terms of values, if I were to list them, they would read as follows: </p>
-<ul>
-<li>Adventure</li>
-<li>Authenticity</li>
-<li>Compassion</li>
-<li>Integrity</li>
-<li>Justice</li>
-<li>Kindness</li>
-<li>Open-mindedness</li>
-<li>Autonomy</li>
-<li>Contribution</li>
-<li>Knowledge/ Learning/ Wisdom</li>
-</ul>
-<p>In terms of identity, I&#39;m not entirely sure how to relate to this question; I&#39;m not trying to be contentious. I tend to think of transplace/transregionalism as its own real and valid condition - that constellated intersections are emplacement. I&#39;m mostly repeating ideas from a poet who writes about Transplace Poetics and &quot;The right to be transplace.&quot; I mean, growing up in different regions with different people and cultures shapes identity and values in a way that makes it hard to answer the question &quot;Where do you come from?&quot; So, I like this idea - that you belong everywhere.</p>
-<p>Why I&#39;m attending Dev Academy: I want to learn new skills, meet new people, expand my future possibilities in terms of work and travel. I&#39;m trying to create a website at the moment to post and write about my interests, and I&#39;d like to figure out how to do this! My goal and central focus right now is to become a web developer and make a difference in people&#39;s lives.</p>
-<h3 id="what-was-it-like-trying-to-summarise-yourself-to-a-group-of-strangers-">What was it like trying to summarise yourself to a group of strangers?</h3>
-<p>It was alright! It takes time to get to know people; I feel I communicated some central ideas about myself and that&#39;s all good. </p>
-<h3 id="could-you-feel-your-ego-were-you-self-conscious-">Could you feel your ego? Were you self conscious?</h3>
-<p>Initially I was self conscious about sounding contentious with regards to identity, so I added this as a point. Reading through other people&#39;s responses, it seems as though quite a few people share a similar framework for thinking through identity as something complex and difficult to be reduced to X or Y or Z. </p>
+                        <ul>
+                            <li>It&#39;s something you learn over time by writing code and solving problems. I think
+                                that saying is another way to say that you need to think differently about problems and
+                                situations than you would in other areas of life. Programming has a unique way of
+                                thinking required to be successful. But it&#39;s not one tangible thing you can read a
+                                manual and learn. It varies depending on the language, the methodology and more.</li>
+                            <li>Thinking like a programmer isn&#39;t a skill. Its a habit. You start to think in terms
+                                of code the more you write code.</li>
+                            <li><strong>What does the internet say about flipped learning? What is flipped learning and
+                                    flipped classroom? How do you think it will relate to your learning
+                                    journey?</strong></li>
+                            <li>Flipped learning puts the onus on the student to learn. i.e., You are responsible for
+                                your learning journey.</li>
+                            <li>The internet: &quot;Look, others have commented on this in great detail, so I&#39;ll
+                                just throw in and note that there isn&#39;t one kind of good teaching. Lecturing and
+                                flipped classrooms can both be done lazily or with diligence can care. There is no
+                                monopoly on good teaching methods to be found in any single camp.&quot;</li>
+                            <li>Because people are weird: research has shown that students in classes that focus on
+                                active learning (often meaning discussing the materials with their classmates) <em>learn
+                                    more but think they learn less</em> than students in lecture-based classes.
+                                There&#39;s actually a very recent study on this: <a
+                                    href="https://www.pnas.org/content/116/39/19251">https://www.pnas.org/content/116/39/19251</a>
+                            </li>
+                            <li>Research has also shown that most students dislike the idea of flipped courses
+                                initially, but that large majorities prefer them when they&#39;ve actually tried them.
+                            </li>
+                        </ul>
+                        <h3 id="what-is-your-process-so-far-for-solving-problems-">What is your process so far for
+                            solving problems?</h3>
+                        <ol>
+                            <li>Persistence </li>
+                            <li>Networking in with a more knowlegable other. </li>
+                            <li>Taking care of my health and prioritising sleep, exercise, nutrition. </li>
+                            <li>Not taking myself too seriously. </li>
+                            <li>Trying to enjoy the course and have fun. </li>
+                        </ol>
+                        <h3 id="introduce-yourself">Introduce yourself</h3>
+                        <p>Hello, my name is Jemma and I&#39;m currently based in Auckland. I spent some in France,
+                            Germany, and Italy in 2019 and came back to New Zealand in 2020, just one month before the
+                            fist lockdown. I just finished a Masters degree in English Literature (based on a French
+                            text), and I&#39;d love to travel again, perhaps being able to eventually work remotely.
+                            I&#39;m not sure why I initially felt like tech wasn&#39;t for me, but I&#39;m interested in
+                            the connection between Art/Science/Philosophy/Tech/Ethics, and I enjoy learning new things
+                            and being challenged. I started teaching mysel some basic code at the beginning of 2021, and
+                            realised that if I want to take this seriously as a career, then partaking in a Bootcamp
+                            sounded like a good idea in terms of pace and intensity of learning, and also connecting to
+                            other people who are also interested in Tech. </p>
+                        <p>In terms of values, if I were to list them, they would read as follows: </p>
+                        <ul>
+                            <li>Adventure</li>
+                            <li>Authenticity</li>
+                            <li>Compassion</li>
+                            <li>Integrity</li>
+                            <li>Justice</li>
+                            <li>Kindness</li>
+                            <li>Open-mindedness</li>
+                            <li>Autonomy</li>
+                            <li>Contribution</li>
+                            <li>Knowledge/ Learning/ Wisdom</li>
+                        </ul>
+                        <p>In terms of identity, I&#39;m not entirely sure how to relate to this question; I&#39;m not
+                            trying to be contentious. I tend to think of transplace/transregionalism as its own real and
+                            valid condition - that constellated intersections are emplacement. I&#39;m mostly repeating
+                            ideas from a poet who writes about Transplace Poetics and &quot;The right to be
+                            transplace.&quot; I mean, growing up in different regions with different people and cultures
+                            shapes identity and values in a way that makes it hard to answer the question &quot;Where do
+                            you come from?&quot; So, I like this idea - that you belong everywhere.</p>
+                        <p>Why I&#39;m attending Dev Academy: I want to learn new skills, meet new people, expand my
+                            future possibilities in terms of work and travel. I&#39;m trying to create a website at the
+                            moment to post and write about my interests, and I&#39;d like to figure out how to do this!
+                            My goal and central focus right now is to become a web developer and make a difference in
+                            people&#39;s lives.</p>
+                        <h3 id="what-was-it-like-trying-to-summarise-yourself-to-a-group-of-strangers-">What was it like
+                            trying to summarise yourself to a group of strangers?</h3>
+                        <p>It was alright! It takes time to get to know people; I feel I communicated some central ideas
+                            about myself and that&#39;s all good. </p>
+                        <h3 id="could-you-feel-your-ego-were-you-self-conscious-">Could you feel your ego? Were you self
+                            conscious?</h3>
+                        <p>Initially I was self conscious about sounding contentious with regards to identity, so I
+                            added this as a point. Reading through other people&#39;s responses, it seems as though
+                            quite a few people share a similar framework for thinking through identity as something
+                            complex and difficult to be reduced to X or Y or Z. </p>
 
 
 
@@ -253,40 +405,40 @@ I&#39;m not sure why I initially felt like tech wasn&#39;t for me, but I&#39;m i
 
 
 
-               
 
 
 
 
 
 
-      
 
-        <!-- Footer -->
-        <footer id="footer">
-            <ul class="icons">
-                <li><a href="https://twitter.com/Jemma97912606" class="icon brands fa-twitter"><span
-                            class="label">Twitter</span></a></li>
-                <li><a href="https://www.instagram.com/jemrosedix/" class="icon brands fa-instagram"><span
-                            class="label">Instagram</span></a></li>
-                <li><a href="https://github.com/jemma-dixon" class="icon brands fa-github"><span
-                            class="label">Github</span></a></li>
-                <li><a href="https://www.linkedin.com/in/jemma-dixon-134615135/" class=" icon brands fa-linkedin"><span
-                            class="label">Linkedin</span></a></li>
-            </ul>
-           
-        </footer>
 
-    </div>
 
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/main.js"></script>
+                        <!-- Footer -->
+                        <footer id="footer">
+                            <ul class="icons">
+                                <li><a href="https://twitter.com/Jemma97912606" class="icon brands fa-twitter"><span
+                                            class="label">Twitter</span></a></li>
+                                <li><a href="https://www.instagram.com/jemrosedix/"
+                                        class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="https://github.com/jemma-dixon" class="icon brands fa-github"><span
+                                            class="label">Github</span></a></li>
+                                <li><a href="https://www.linkedin.com/in/jemma-dixon-134615135/"
+                                        class=" icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                            </ul>
+
+                        </footer>
+
+            </div>
+
+            <!-- Scripts -->
+            <script src="assets/js/jquery.min.js"></script>
+            <script src="assets/js/jquery.dropotron.min.js"></script>
+            <script src="assets/js/jquery.scrollex.min.js"></script>
+            <script src="assets/js/browser.min.js"></script>
+            <script src="assets/js/breakpoints.min.js"></script>
+            <script src="assets/js/util.js"></script>
+            <script src="assets/js/main.js"></script>
 
 </body>
 
