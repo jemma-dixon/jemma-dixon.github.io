@@ -71,6 +71,260 @@
 
                 <h2>SPRINT FOUR REFLECTIONS</h2>
 
+                <!-- INSERT BLOG CONTENT BELOW-->
+
+                <h1 id="my-reflections-sprint-four">My Reflections - Sprint Four</h1>
+                <h1 id="-learning-competencies-"><strong>Learning Competencies</strong></h1>
+                <p>By the end of this primer, you should be familiar with and able to explain:</p>
+                <ul>
+                    <li>What code readability is ☑️</li>
+                    <li>Why it&#39;s an important skill to have as a developer ☑️</li>
+                    <li>What code readability habits you can start building on today ☑️</li>
+                </ul>
+                <h1 id="-my-reflections-sprint-four-"><strong>My Reflections - Sprint Four</strong></h1>
+                <blockquote>
+                    <p><em>Good developers write code fast and with a low bug-rate. Great developers read existing code,
+                            reuse and improve them, generating higher quality code with no duplication and reduced
+                            bug-rate for both new and existing code. We should write readable code; written for humans
+                            and not just for machines. And we should read code and improve, rather than rewriting.</em>
+                    </p>
+                </blockquote>
+                <h3 id="what-makes-code-more-readable-for-you-">What makes code more readable for you?</h3>
+                <p>From <a
+                        href="http://blog.ashodnakashian.com/2011/03/code-readability/">http://blog.ashodnakashian.com/2011/03/code-readability/</a>
+                </p>
+                <h2 id="code-readability">Code Readability</h2>
+                <p>Code Readability is about practising the following habits when you are working on code:</p>
+                <ul>
+                    <li>Indentation/formatting your code to best practice standards.</li>
+                    <li>Consistency in how you name things and how you format your code.</li>
+                    <li>Naming things well (things like functions and variables) so you can tell what they do or are.
+                    </li>
+                    <li>Break things into small segments (many small functions compared to one big function).</li>
+                    <li>D.R.Y (Don&#39;t Repeat Yourself).</li>
+                    <li>Commenting a complicated section so people have some idea before reading your code.</li>
+                    <li>Not commenting everything or obvious things.</li>
+                    <li>Refactoring.</li>
+                    <li>Clean code.</li>
+                </ul>
+                <h3 id="to-make-things-more-concrete-here-are-some-of-my-top-readability-points-">To make things more
+                    concrete, here are some of my top readability points:</h3>
+                <ol>
+                    <li><strong><em>Consistency.</em></strong>I can read code with virtually any convention, no problem.
+                        I’ve grown to learn to adapt. If I think I need to read code, then I better accept that I may
+                        very well read code not written in my favorite style. One thing that is nearly impossible to
+                        adapt to, however, is when the code looks like it’s written by a 5 year old who just switched
+                        from <a href="http://en.wikipedia.org/wiki/QWERTY">Qwerty keyboard</a> to <a
+                            href="http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">Dvorak</a>.Whatever
+                        convention you choose or get forced to use, just stick to it. Make sure it’s what you use
+                        <em>everywhere</em> in that project.</li>
+                    <li><strong><em>Consistency.</em></strong>There is no way to stress how important this is. People
+                        experiment with braces-on-next-line and braces-on-same-line and forget that their experiments
+                        end up in the source repository for the frustration of everyone else on the team. Seriously,
+                        experimentation is fine. Finding your preferred style is perfectly Ok. Just don’t commit them.
+                        Not in the Trunk at least.</li>
+                    <li><strong><em>Space out the code.</em></strong>Readable code is like readable text. As much as
+                        everyone hates reading text-walls, so do developers who have to read sandwiched code. Put empty
+                        lines between all scopes. An end-brace is a great place to add that extra line to make it easier
+                        to read and find the start of the next scope. Need to comment? Great. Just avoid newspaper-style
+                        coding, where the code is turned into a two-column format, code on the left, comments on the
+                        right. There are very few cases that one needs to do that. Comments go above the code block or
+                        statement, not next to it. Comments are also more readable if they are preceded by a blank line.
+                        There is no shortage of disk space. Break long functions, break mega classes and even break long
+                        files. Make your functions reasonable in size. Use <a
+                            href="http://en.wikipedia.org/wiki/Cyclomatic_complexity">cyclomatic complexity</a> metrics
+                        to know when your code is too complex and hence hard to read and understand. Refactor.</li>
+                    <li><strong><em>Stop banner-commenting.</em></strong>If you need to add 5 lines of boxed comments
+                        within functions, then it’s a good indication you need to start a new function. The banner can
+                        go above the new function. As much as I’d rather not have it there either, it’s much better than
+                        having a 1000+ lines in a single function with half a dozen banners. After all, if you need to
+                        signal the start of a new logical block, functions do that better. Same goes to breaking long
+                        functions, classes and files. (Unlike what the image above may imply, that image is just an
+                        image of some code, I do not endorse the style it adopts.)</li>
+                    <li><strong><em>Don’t use magic numbers.</em></strong>Constants are a great tool to give names to
+                        what otherwise is a seemingly magic number that makes the code work. Default values, container
+                        limits, timeouts and user-messages are just some examples of good candidates for constants. Just
+                        avoid converting every integer into a constant. That’s not the purpose of constants and it
+                        reduces code readability.</li>
+                    <li><strong><em>Choose identifier names wisely.</em></strong>There has been no shortage of
+                        literature on naming conventions and the perils of choosing names that lack significant
+                        differences. Yet, some still insist on using very ambiguous names and reuse them across logical
+                        boundaries. The identifiers not only need to be meaningful and unambiguous, but they also need
+                        to be consistent across functions, classes, modules and even the complete project. At least an
+                        effort to make them consistent should be made. If you need to use acronyms, then make sure you
+                        use the same case convention. Have database or network connections, use the same identifier
+                        names everywhere. It’s much, much more readable to see an identifier and immediately know what
+                        the type is. Incidentally, this was the <a
+                            href="http://www.joelonsoftware.com/articles/Wrong.html">original purpose</a> of <a
+                            href="http://en.wikipedia.org/wiki/Hungarian_notation">Hungarian notation</a> (<a
+                            href="http://msdn.microsoft.com/en-us/library/aa260976(v=vs.60">original paper</a>.aspx)).
+                        Same goes to function names. ‘<em>Get’</em> can be used for read-only functions that have no
+                        side-effects. Avoid using verbs and nouns in an identifier then implement logic that contradicts
+                        the natural meaning of those words. It’s downright inhumane. If a functions claims to get some
+                        value, then that function should never modify <em>any</em> other value (with the possible
+                        exception of updating caches, if any, which should only boost performance without affecting
+                        correctness.) Prefer using proper names in identifiers. Meaningful names, nouns and verbs can be
+                        a great help, use them to their limit.</li>
+                    <li><strong><em>Don’t chain declarations.</em></strong>Chaining variable declarations is a very
+                        common practice in C. This is partially due to the fact that Ansi C didn’t allow declaring
+                        variables after any executable statement. Developers had to declare everything up-front and at
+                        the top of their functions. This meant that all the variables of a given type were declared in a
+                        chain of commas. Declare variables in the innermost scope possible and as close to the usage
+                        statement as possible. Avoid recycling variables, unless it’s for the very same purpose. Never
+                        re-purpose variables, instead, declare new ones.A similar practice is sometimes used to chain
+                        calls where a single function call which takes one or more arguments is called by first calling
+                        other functions and passing their return values as arguments to the first call. These two types
+                        of chaining make readability a painful process. Some people chain 3 or 4 function calls within
+                        one another, thinking it’s more compact and therefore better, somehow. It’s not. Not when
+                        someone needs to scan the code for side-effects and to find a hard bug. A possible exception to
+                        this is chaining calls one after another. Some classes are designed to chain calls such that
+                        each call returns a reference to the original instance to call other members. This is often done
+                        on string and I/O classes. This type of chaining, if not excessively used and too long, can be
+                        helpful and improve readability.</li>
+                    <li><strong><em>Limit line and file lengths.</em></strong>Scrolling horizontally is a huge pain. No
+                        one can be reasonably expected to read anything while scrolling left and right for each line.
+                        But some people have larger screens than others. Yet some have weaker eye-sight, so use larger
+                        fonts. I’ve seen code apparently aligned to 120 characters per line, with occasional 150+
+                        characters per line, back when 17″ screens were the norm. Some don’t even care or keep track of
+                        line length. This is very unfortunate as it makes other people’s lives very hard, especially
+                        those with smaller screens, lower resolutions and large fonts (read: bad eye-sight.) Code can’t
+                        be word-wrapped like article text (without the help of advanced editors.)A good starting point
+                        is the legacy standard of 80 characters-per-line (cpl). If we can stick to that, great. We
+                        should make an effort to minimize the line-length and 80 characters is not too narrow to make
+                        things garbled. For teams who can <em>all</em> work with 100 or 120 cpl, the extra line width
+                        can give quite a bit flexibility and improve readability. But again be careful because too long
+                        a line and readability suffers yet again. Think how newspapers and magazines have narrow columns
+                        and how readable they are. Our wide screens with large footprints are like newspapers and moving
+                        our heads to read across the line, as opposed to moving just our eyes, is an extra physical
+                        strain and certainly a speed bump that we can do without.</li>
+                    <li><strong><em>Make scopes explicit.</em></strong>Languages often have implicit scopes. The first
+                        statement after a conditional or a loop in C-style languages implicitly fall under the
+                        conditional or loop, but not consecutive statements. It’s much harder to parse the end of
+                        statements using one’s eyeballs to figure out which statement belongs to the implicit scope.
+                        Making these cases explicit makes it much easier to see them without much effort. Adding braces
+                        and an empty line after the closing brace, even around single-statement scopes does improve
+                        readability quite a bit.</li>
+                    <li><strong><em>Comment.</em></strong>Code is very well understood by machines, even when obsecure
+                        and mangled. Humans on the other hand need to understand purpose and reason, beyond seeing what
+                        a piece of code would do. Without understanding the reasons behind particular constructs,
+                        operations and values, no developer can maintain the code in any sensible way. Comments are a
+                        great tool to communicate the less obvious aspects of the code. Explain the business needs,
+                        implicit assumptions, workarounds, special-requests and the temporary solutions. Talk to your
+                        fellow developers through comments. But, as every rule comes with exceptions, avoid
+                        over-commenting at all costs. Resist the temptation to declare that an error is about to occure
+                        right before throwing an exception. The throw statement is self-commenting. Don’t repeat
+                        yourself. Rather, explain why the case is considered unrecoverable at that point, if it’s not
+                        obvious. Prefer to write code that speaks for itself. Self-descriptive code is the most readable
+                        code.</li>
+                </ol>
+                <p><strong>As a corollary, some code <em>should</em> be made hard to read. You read that right</strong>.
+                    Code that depends on hacks, bad practices or temporary solutions should be made harder to read.
+                    Perhaps my best example is casting. It’s not rare that we need to cast instances of objects to
+                    specific types, and while this is a standard practice, it isn’t exactly highly recommended either.
+                    Making the casting a little less readable is a good way to force the reader to squint and make sure
+                    it’s not a bogus cast. This isn’t unlike italic text which makes reading the text harder and
+                    therefore makes it stand out. In the same vein, temporary solutions and hacks should be made to
+                    stand out. Adding TODO and FIXME markers are a good start. BUGBUG is another marker for known issues
+                    or limitations. Actually, if there is any place for that banner-comment, this would be it. Make
+                    known issues stand out like a sore thumb.</p>
+                <p>As with most things, the above is mostly a guideline, rules of thumb if you will. They are not set in
+                    stone and they aren’t complete by any stretch of imagination. There are many obviously important
+                    cases left out. Languages, ecosystems, frameworks and libraries come with their own nuances. What’s
+                    clear in one language might be very ambiguous in another, and therefore frowned upon. The important
+                    thing is to write with the reader in mind, to avoid confusing styles and especially to be mindful of
+                    the context and when an explanatory comment is due, and when refactoring is a better choice.</p>
+                <h3 id="do-you-prefer-tabs-or-spaces-when-indenting-">Do you prefer tabs or spaces when indenting?</h3>
+                <ul>
+                    <li>I re-structured some html in my index.html file by creating multiple levels of indenting.
+                        Admittedly, it is easier to read now. For example</li>
+
+                </ul>
+
+
+
+
+<!-- Banner -->
+<pre>
+    <code>
+
+  
+        <section id="banner">
+            <h2>Technical Blog</h2>
+            <br>
+
+            <!--Code Readibility: create multiple levels of indenting -->
+
+            <ul class="actions special">
+                <li>
+                    <a href="https://www.notion.so/zarkom/Introduction-to-Git-ac396a0697704709a12b6a0e545db049"
+                        class="button primary">GIT
+                    </a>
+                </li>
+                <li>
+                    <a href="main-blog.html" class="button">CSS
+
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.jemmadixoncodes.com/t/" class="button primary">JAVASCRIPT FUNDAMENTALS
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="button">PROBLEM SOLVING
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="button primary">JAVASCRIPT PROJECT
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+    </code>
+</pre>
+
+<p>I totally did not mean to embed that code in here like this. But I like this. Will try again below to create a code snippet in HTML.</p>
+
+<h3>Inserting Code Snippets into HTML</h3>
+<ul>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum, voluptates eligendi provident ab nostrum mollitia maiores esse vel non reprehenderit! Ipsa nostrum ab error accusamus possimus exercitationem eligendi minima.</li>
+</ul>
+
+
+
+
+               
+                <h3 id="what-is-your-workspace-like-in-real-life-clean-messy-">What is your workspace like in real life?
+                    Clean? Messy?</h3>
+                <ul>
+                    <li>Coffee, candles, notebooks, pens, books, flowers. Clean.</li>
+                </ul>
+                <h3 id="is-your-code-a-reflection-of-that-">Is your code a reflection of that?</h3>
+                <ul>
+                    <li>My code needs to be better formatted according to the principles here:</li>
+                    <li><a href="https://www.granneman.com/webdev/coding/formatting-and-indenting-your-html">Formatting and Indenting HTML</a>
+                    </li>
+                </ul>
+                <h3 id="-book-to-read-on-clean-code-"><strong>Book To Read on Clean Code</strong></h3>
+                
+
+               <img
+                    src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/1370/9780137081073.jpg"
+                    alt="clean code" />
+
+                
+
+                    <h3 id="do-you-think-you-would-prefer-using-test-driven-development-why-">Do you think you would prefer using Test Driven Development? Why?</h3>
+                    <h3 id="kata">Kata</h3>
+                    <h3 id="how-did-you-find-using-repl-it-in-practice-confusing-useful-">How did you find using repl.it in practice? Confusing? Useful?</h3>
+                    <h3 id="was-it-helpful-to-look-at-the-tests-while-coding-the-kata-">Was it helpful to look at the tests while coding the kata?</h3>
+                    <h3 id="what-problem-solving-techniques-did-you-implement-in-your-coding-flow-">What problem solving techniques did you implement in your coding flow?</h3>
+                    <h3 id="what-was-the-most-challenging-part-of-super-fizzbuzz-for-you-">What was the most challenging part of Super FizzBuzz for you?</h3>
+                    <h3 id="did-you-want-to-change-and-refactor-your-code-once-you-were-finished-">Did you want to change and refactor your code once you were finished?</h3>
+                    
+            
+
+
 
 
                 <!-- Footer -->
