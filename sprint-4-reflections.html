@@ -117,7 +117,8 @@
                         from <a href="http://en.wikipedia.org/wiki/QWERTY">Qwerty keyboard</a> to <a
                             href="http://en.wikipedia.org/wiki/Dvorak_Simplified_Keyboard">Dvorak</a>.Whatever
                         convention you choose or get forced to use, just stick to it. Make sure it’s what you use
-                        <em>everywhere</em> in that project.</li>
+                        <em>everywhere</em> in that project.
+                    </li>
                     <li><strong><em>Consistency.</em></strong>There is no way to stress how important this is. People
                         experiment with braces-on-next-line and braces-on-same-line and forget that their experiments
                         end up in the source repository for the frustration of everyone else on the team. Seriously,
@@ -243,8 +244,8 @@
 
 
 
-<!-- Banner -->
-<pre>
+                <!-- Banner -->
+                <pre>
     <code>
 
   
@@ -283,17 +284,15 @@
     </code>
 </pre>
 
-<p>I totally did not mean to embed that code in here like this. But I like this. Will try again below to create a code snippet in HTML.</p>
+                <p>I totally did not mean to embed that code in here like this. But I like this. Will try again below to
+                    create a code snippet in HTML.</p>
 
-<h3>Inserting Code Snippets into HTML</h3>
-<ul>
-    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error dolorum, voluptates eligendi provident ab nostrum mollitia maiores esse vel non reprehenderit! Ipsa nostrum ab error accusamus possimus exercitationem eligendi minima.</li>
-</ul>
-
+                <h3>Inserting Code Snippets into HTML</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ut delectus totam cumque dicta perspiciatis quidem corporis aliquam necessitatibus praesentium ipsa, nulla incidunt maxime, fuga omnis natus beatae ducimus expedita.</p>
 
 
 
-               
+
                 <h3 id="what-is-your-workspace-like-in-real-life-clean-messy-">What is your workspace like in real life?
                     Clean? Messy?</h3>
                 <ul>
@@ -302,22 +301,22 @@
                 <h3 id="is-your-code-a-reflection-of-that-">Is your code a reflection of that?</h3>
                 <ul>
                     <li>My code needs to be better formatted according to the principles here:</li>
-                    <li><a href="https://www.granneman.com/webdev/coding/formatting-and-indenting-your-html">Formatting and Indenting HTML</a>
+                    <li><a href="https://www.granneman.com/webdev/coding/formatting-and-indenting-your-html">Formatting
+                            and Indenting HTML</a>
                     </li>
                 </ul>
                 <h3 id="-book-to-read-on-clean-code-"><strong>Book To Read on Clean Code</strong></h3>
-                
 
-               <img
-                    src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/1370/9780137081073.jpg"
+
+                <img src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9780/1370/9780137081073.jpg"
                     alt="clean code" />
 
-                    <h3>
-                         Testing</h3>
-                      
+                <h3>
+                    Testing</h3>
 
-                    <xpm>
-                        <pre>
+
+                <xpm>
+                    <pre>
                             function testSum(){
                                 var expected = 7
                                 var actual = sum(5, 2)
@@ -328,22 +327,85 @@
                                     console.log("It works!")
                                 }
                          </pre>
-                    </xpm>
+                </xpm>
 
 
 
-                         <h3>Have a go at writing a "sum" function below that would make the above function print out `"It works!"`:</h3>
-                
 
-                    <h3 id="do-you-think-you-would-prefer-using-test-driven-development-why-">Do you think you would prefer using Test Driven Development? Why?</h3>
-                    <h3 id="kata">Kata</h3>
-                    <h3 id="how-did-you-find-using-repl-it-in-practice-confusing-useful-">How did you find using repl.it in practice? Confusing? Useful?</h3>
-                    <h3 id="was-it-helpful-to-look-at-the-tests-while-coding-the-kata-">Was it helpful to look at the tests while coding the kata?</h3>
-                    <h3 id="what-problem-solving-techniques-did-you-implement-in-your-coding-flow-">What problem solving techniques did you implement in your coding flow?</h3>
-                    <h3 id="what-was-the-most-challenging-part-of-super-fizzbuzz-for-you-">What was the most challenging part of Super FizzBuzz for you?</h3>
-                    <h3 id="did-you-want-to-change-and-refactor-your-code-once-you-were-finished-">Did you want to change and refactor your code once you were finished?</h3>
-                    
-            
+
+                <h3>Have a go at writing a "sum" function below that would make the above function print out "It
+                    works!":</h3>
+
+                <xpm>
+                    <pre>
+                                function addTwoNumbers(x, y) {
+                                    return x + y;
+                                  }
+                                  console.log(addTwoNumbers(5, 1));
+                             </pre>
+                </xpm>
+
+                <xpm>
+                    <pre>
+                        function addTwoNumbers(x, y) {
+                            return x + y;
+                          }
+                          
+                          function testAddTwoNumbers() {
+                            var x = 5;
+                            var y = 2;
+                            var sum1 = x + y;
+                            var sum2 = addTwoNumbers(x, y);
+                          
+                            console.log('addTwoNumbers() should return the sum of its two parameters.');
+                            console.log('Expect ' + sum1 + ' to equal ' + sum2 + '.');
+                            
+                            if ( sum1 === sum2 ) 
+                              return console.log("It works!");
+                            
+                            console.log("It's broken..");
+                          }
+                          
+                          testAddTwoNumbers();
+                             </pre>
+                </xpm>
+
+
+
+                <h3 id="do-you-think-you-would-prefer-using-test-driven-development-why-">Do you think you would prefer
+                    using Test Driven Development? Why?</h3>
+                <h4 id="-test-driven-development-tdd-"><strong>What is Test Driven Development (TDD)?</strong></h4>
+                <p><code>TDD</code> is a particular way of doing code development as a whole. It involves starting with
+                    the big picture and writing your tests <em>before</em> you write your code.</p>
+                <p>This way of coding means you have to work out what you intend for the code to do and what smaller
+                    things need to happen to achieve this before jumping into writing it. Tests are then written that
+                    match this intent for your project.</p>
+                <p>You don&#39;t need to have written tests for your whole application before you start building, but in
+                    a TDD approach you would write the test/s for the next feature or function before you implement it.
+                </p>
+                <p>Once the test is written, you can then write the code that makes the test pass. Because of this, TDD
+                    forgoes writing &quot;nice&quot; code - so long as it works to achieve the needs of the test,
+                    you&#39;re on the right track. This also means we can try a number of different methods to achieve
+                    the same goal as it doesn&#39;t matter how we get there, just that we do. Once the code works, we
+                    then go back and <code>refactor</code> it to make it more concise and readable.</p>
+                <h4 id="-test-driven-development-tdd-"><strong>Would I prefer using TDD to not using it?</strong></h4>
+                <p></p>
+
+
+
+                <h3 id="kata">Kata</h3>
+                <h3 id="how-did-you-find-using-repl-it-in-practice-confusing-useful-">How did you find using repl.it in
+                    practice? Confusing? Useful?</h3>
+                <h3 id="was-it-helpful-to-look-at-the-tests-while-coding-the-kata-">Was it helpful to look at the tests
+                    while coding the kata?</h3>
+                <h3 id="what-problem-solving-techniques-did-you-implement-in-your-coding-flow-">What problem solving
+                    techniques did you implement in your coding flow?</h3>
+                <h3 id="what-was-the-most-challenging-part-of-super-fizzbuzz-for-you-">What was the most challenging
+                    part of Super FizzBuzz for you?</h3>
+                <h3 id="did-you-want-to-change-and-refactor-your-code-once-you-were-finished-">Did you want to change
+                    and refactor your code once you were finished?</h3>
+
+
 
 
 
