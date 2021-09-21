@@ -288,7 +288,9 @@
                     create a code snippet in HTML.</p>
 
                 <h3>Inserting Code Snippets into HTML</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ut delectus totam cumque dicta perspiciatis quidem corporis aliquam necessitatibus praesentium ipsa, nulla incidunt maxime, fuga omnis natus beatae ducimus expedita.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ut delectus totam cumque dicta
+                    perspiciatis quidem corporis aliquam necessitatibus praesentium ipsa, nulla incidunt maxime, fuga
+                    omnis natus beatae ducimus expedita.</p>
 
 
 
@@ -341,7 +343,7 @@
                                 function addTwoNumbers(x, y) {
                                     return x + y;
                                   }
-                                  console.log(addTwoNumbers(5, 1));
+                                  console.log(addTwoNumbers(5, 2));
                              </pre>
                 </xpm>
 
@@ -388,8 +390,61 @@
                     you&#39;re on the right track. This also means we can try a number of different methods to achieve
                     the same goal as it doesn&#39;t matter how we get there, just that we do. Once the code works, we
                     then go back and <code>refactor</code> it to make it more concise and readable.</p>
+
+                <p>See <a href="https://hackernoon.com/a-crash-course-on-testing-with-node-js-6c7428d3da02">Testing with
+                        Node JS.</a></p>
+                        <p>The article discusses a bit of theory concerning unit testing.</p>
+                        <h3>A unit test consists of three parts.</h3>
+                        <ol>
+                            <li> Arrange</li>
+                            <li>Act</li>
+                            <li>Assert</li>
+                        </ol> For Example
+
+
+ <xpm>
+                    <pre>
+                        function addTwoNumbers(x, y) {
+                            return x + y;
+                          }
+                          
+                          function testAddTwoNumbers() {
+                          
+                            // 1. ARRANGE
+                            var x = 5;
+                            var y = 2;
+                            var sum1 = x + y;
+                          
+                            // 2. ACT
+                            var sum2 = addTwoNumbers(x, y);
+                          
+                            console.log('addTwoNumbers() should return the sum of its two parameters.');
+                            console.log('Expect ' + sum1 + ' to equal ' + sum2 + '.');
+                            
+                          
+                            // 3. ASSERT
+                            if ( sum1 === sum2 ) 
+                              return console.log('Passed.');
+                            
+                            console.log('Failed.');
+                          }
+                          
+                          testAddTwoNumbers();
+                        
+                             </pre>
+                </xpm>
+                <blockquote>
+                    Assertions are a tool to do basic sanity checking for programmer errors.
+                                — Marijn Haverbeke, Eloquent JavaScript
+                </blockquote>
+
                 <h4 id="-test-driven-development-tdd-"><strong>Would I prefer using TDD to not using it?</strong></h4>
-                <p></p>
+                <p><a href="https://www.freecodecamp.org/news/isnt-tdd-test-driven-development-twice-the-work-why-should-you-care-4ddcabeb3df9/">This article</a> gives good rationale behind why TDD is worthwhile in the long-run. <br>
+                    To summarise: Even if it seems like a large
+                    up-front investment, it 'pays dividends' in terms of preventing bugs; it documents code well; allows you to make changes earlier since 
+                    you're more likely to be able to diagnose problems; it saves money in relation to the cost of development change over time; the saved
+                    time can then be invested into innovations and research. Lastly, it helps you to avoid scope creep -  any unexpected growth in the scope of work which leads to delays in project delivery.
+                </p>
 
 
 
