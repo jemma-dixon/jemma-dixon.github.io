@@ -393,16 +393,16 @@
 
                 <p>See <a href="https://hackernoon.com/a-crash-course-on-testing-with-node-js-6c7428d3da02">Testing with
                         Node JS.</a></p>
-                        <p>The article discusses a bit of theory concerning unit testing.</p>
-                        <h3>A unit test consists of three parts.</h3>
-                        <ol>
-                            <li> Arrange</li>
-                            <li>Act</li>
-                            <li>Assert</li>
-                        </ol> For Example
+                <p>The article discusses a bit of theory concerning unit testing.</p>
+                <h3>A unit test consists of three parts.</h3>
+                <ol>
+                    <li> Arrange</li>
+                    <li>Act</li>
+                    <li>Assert</li>
+                </ol> For Example
 
 
- <xpm>
+                <xpm>
                     <pre>
                         function addTwoNumbers(x, y) {
                             return x + y;
@@ -435,34 +435,157 @@
                 </xpm>
                 <blockquote>
                     Assertions are a tool to do basic sanity checking for programmer errors.
-                                — Marijn Haverbeke, Eloquent JavaScript
+                    — Marijn Haverbeke, Eloquent JavaScript
                 </blockquote>
 
                 <h4 id="-test-driven-development-tdd-"><strong>Would I prefer using TDD to not using it?</strong></h4>
-                <p><a href="https://www.freecodecamp.org/news/isnt-tdd-test-driven-development-twice-the-work-why-should-you-care-4ddcabeb3df9/">This article</a> gives good rationale behind why TDD is worthwhile in the long-run. <br>
+                <p><a
+                        href="https://www.freecodecamp.org/news/isnt-tdd-test-driven-development-twice-the-work-why-should-you-care-4ddcabeb3df9/">This
+                        article</a> gives good rationale behind why TDD is worthwhile in the long-run. <br>
                     To summarise: Even if it seems like a large
-                    up-front investment, it 'pays dividends' in terms of preventing bugs; it documents code well; allows you to make changes earlier since 
-                    you're more likely to be able to diagnose problems; it saves money in relation to the cost of development change over time; the saved
-                    time can then be invested into innovations and research. Lastly, it helps you to avoid scope creep -  any unexpected growth in the scope of work which leads to delays in project delivery.
+                    up-front investment, it 'pays dividends' in terms of preventing bugs; it documents code well; allows
+                    you to make changes earlier since
+                    you're more likely to be able to diagnose problems; it saves money in relation to the cost of
+                    development change over time; the saved
+                    time can then be invested into innovations and research. Lastly, it helps you to avoid scope creep -
+                    any unexpected growth in the scope of work which leads to delays in project delivery.
 
                 </p>
-                <p><a href="https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d">Another article on Unit Testing</a> 
-
-                
-
+                <p><a href="https://medium.com/javascript-scene/what-every-unit-test-needs-f6cd34d9836d">Another article
+                        on Unit Testing</a>
 
 
-                <h3 id="kata">Kata</h3>
+
+
+
+                <h2 id="kata">Kata</h2>
                 <h3 id="how-did-you-find-using-repl-it-in-practice-confusing-useful-">How did you find using repl.it in
                     practice? Confusing? Useful?</h3>
+                <p><strong>What is repl.it?</strong></p>
+                <ul>
+                    <li>Repl.it is a free IDE (integrated development environment) that allows users to write their own
+                        programs and code in dozens of different languages. While traditional IDEs are software programs
+                        downloaded to a computer, Repl.it is completely web browser-based and can be accessed from any
+                        internet-enabled device such as a phone, tablet, or computer. Users can access the software by
+                        typing the name directly into their browser, <a href="http://www.repl.it/">www.repl.it</a>.</li>
+                </ul>
+                <p><strong>From a software engineer (with whom I&#39;m in agreement):</strong></p>
+                <ul>
+                    <li>I use Repl.it almost every day and am very happy it exists and is growing. I like that their
+                        focus doesn&#39;t stray away with distractions of other possibly useful links.</li>
+                    <li><strong>It&#39;s really there for you to practice, test, build, and deploy.</strong> Looking
+                        forward to the future or Repl.it.</li>
+                    <li><strong>Pros:</strong> Ease of use, straightforward, useful, fun to explore</li>
+                    <li><strong>Cons:</strong> none</li>
+                    <li>I like the instant feedback and error messages, it makes it easier to know where you&#39;ve gone
+                        wrong in terms of feedback and how to &#39;course correct.&#39;</li>
+                </ul>
+                <h3 id="was-it-helpful-to-look-at-the-tests-while-coding-the-kata-">Was it helpful to look at the tests
+                    while coding the kata?</h3>
+                <ul>
+                    <li>Yes! For example, in the replit below, if you scroll down in index.js you can see some examples
+                        of the error messages which come up. Essentially, in this case, we want our code to return TRUE
+                        in order to move onto the next stage. If you have successfully applied the correct values to the
+                        right property, then the programme will finally console.log (print out, in this case).</li>
+                </ul>
+
+                <xpm>
+                    <pre>
+                            console.log("Here is your final terah object:")
+                                console.log(terah)
+                                </pre>
+                </xpm>
+
+                <p><a href="https://replit.com/@jemma-dixon/Manipulating-JS-Objects#index.js">Here is a link to my
+                        replit page: Manipulating JS Objects</a></p>
+
+
+
                 <h3 id="was-it-helpful-to-look-at-the-tests-while-coding-the-kata-">Was it helpful to look at the tests
                     while coding the kata?</h3>
                 <h3 id="what-problem-solving-techniques-did-you-implement-in-your-coding-flow-">What problem solving
                     techniques did you implement in your coding flow?</h3>
+
+                <p><a
+                        href="https://kind-level-e7a.notion.site/Manipulating-JS-Objects-Replit-86820f3e6b20424792cd87955d0d8187">Please
+                        click here for my answers - This link leads to my Notion Notes on Manipulating JS Objects</a>
+                </p>
+
+
+
+
                 <h3 id="what-was-the-most-challenging-part-of-super-fizzbuzz-for-you-">What was the most challenging
                     part of Super FizzBuzz for you?</h3>
+                <p>Some questions I had (and conversation) related to this challenge: </p>
+                <ul>
+                    <li>I&#39;m trying to figure out how to solve fizzbuzz using arrays. I don&#39;t understand why
+                        you&#39;d want to do it in terms of arrays? Have googled some examples online but they&#39;re
+                        not using arrays... For example, I understand how this functions:</li>
+                </ul>
+                <p>Write a program that prints the numbers from 1 to 100. But for multiples of three print “Fizz”
+                    instead of the number and for the multiples of five print “Buzz”. For numbers which are multiples of
+                    both three and five print “FizzBuzz”.</p>
+                <p>Sounds easy enough, right?</p>
+                <p>Since we just need to loop through each number from <code>1</code> to <code>100</code>, one of the
+                    simplest FizzBuzz solution can be achieved with a <code>for</code> loop:</p>
+
+
+                <xpm>
+                    <pre>
+
+                        for (let i=1; i <= 100; i++){
+                            if (i % 15 == 0) console.log("FizzBuzz");
+                            else if (i % 3 == 0) console.log("Fizz");
+                            else if (i % 5 == 0) console.log("Buzz");
+                            else console.log(i);
+                        }
+
+                            </pre>
+                </xpm>
+
+                
+                    <h3><strong>My Thinking Process:</strong></h3>
+                    
+                    <li>I think I understand this since it&#39;s something I&#39;m more familiar with, but passing stuff
+                        into arrays in terms of looping, have never done this before...</li>
+                    <li>I&#39;m also not yet finished learning about functions so I don&#39;t know if I have the
+                        necessary skills to solve it - yet.</li>
+                    <li>Well, I think I can solve this just using a for loop, else / if and modulos but arrays...
+                        I&#39;m not sure how to do that.</li>
+                    <li>And a method is the same thing as a function, right?</li>
+                </ul>
+
+                <h3><strong>A Conversation</strong></h3>
+                
+                    <li><strong>Them:</strong> The idea of using arrays is so you don&#39;t have to use a complex nested statement and can
+                        easily change what is being printed. I did have some help from youtube with that one before we
+                        started :D the nested object stuff has definitely been giving me trouble.</li>
+                    <li><strong>Me</strong>: It&#39;s taking me a while to get through the FizzBuzz challenge... think I
+                        better go for a run and come back again! I think I could solve this just using a for loop - not
+                        very well versed in using arrays. (Is a nested loop an example of iterating arrays? and is
+                        iterating over arrays another way of saying &#39;looping&#39; over arrays? If so, a nested loop
+                        could be an example of a way to iterate through arrays, but it could just be a loop within a
+                        loop?</li>
+                    <li><strong>Them:</strong> Yep, iterating is basically another way of saying &quot;loop .&quot; A
+                        nested loop is a loop within a loop, that is a way of iterating through an array. This might
+                        help visualize what&#39;s going on <a
+                            href="https://www.youtube.com/watch?v=HXNhEYqFo0o">https://www.youtube.com/watch?v=HXNhEYqFo0o</a>
+                    </li>
+                </ul>
                 <h3 id="did-you-want-to-change-and-refactor-your-code-once-you-were-finished-">Did you want to change
                     and refactor your code once you were finished?</h3>
+                
+                    <h3>What is code refactoring?</h3>
+                    <li>In computer programming and software design, code refactoring is the process of restructuring
+                        existing computer code—changing the factoring—without changing its external behavior.
+                        <strong>Refactoring is intended to improve the design, structure, and/or implementation of the
+                            software while preserving its functionality.</strong>
+                    </li>
+                    <li>I am more likely to want to make code more human-readable. I care less for fewer lines of code
+                        and I care more for being able to understand what it is the code is doing. If this means that my
+                        code is longer but more easily readable for a human, then that&#39;s good!</li>
+                </ul>
+
 
 
 
