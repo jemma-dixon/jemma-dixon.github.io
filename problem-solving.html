@@ -116,62 +116,224 @@
 
 
 
+                <p><strong>Tell your non-tech friend a story about a time you:</strong></p>
+                <ol>
+                    <li><strong>Got blocked on a simple problem</strong></li>
+                </ol>
+                <p>Here is an example of a problem I was trying to solve a problem using a For...Of loop:</p>
+                <p>Please use a <strong>for...of</strong> loop to loop over an array and print out the square of each
+                    value (the number multiplied by itself).</p>
+                <p><strong>NOTES:</strong></p>
+                <ul>
+                    <li>The ** operator is not supported on this platform</li>
+                    <li>You could accomplish this by using a while loop or a for loop, but please use a for...of loop!
+                    </li>
+                </ul>
+                
+<xpm>
+    <pre>
+    const numbers = [1,2,3,4,5,6,7,8,9]; //DON'T CHANGE THIS LINE PLEASE!
 
-                <li>How did you feel throughout the process?</li>
-                <li>What did you learn?</li>
-            </ul>
-            <p><strong>Reflect on how confident you feel using the problem solving techniques and process:</strong></p>
-            <ul>
-                <li>Pseudocode</li>
-                <li>Trying something</li>
-                <li>Rubber ducky method</li>
-                <li>Reading error messages</li>
-                <li>Console.logging</li>
-                <li>Googling</li>
-                <li>Asking your peers for help</li>
-                <li>Asking coaches for help</li>
-                <li>Improving your process with reflection</li>
-            </ul>
-            <h1 id="-steps-"><strong>Steps</strong></h1>
-            <ol>
-                <li>Write your blog</li>
-                <li>Add link to index page</li>
-                <li>Share with your cohort via Slack</li>
-            </ol>
-
-
-
-            <div class="box">
+// WRITE YOUR LOOP BELOW THIS LINE:
+for ( let number of numbers ){
+    console.log(number * number);
+}
+</pre>
+</xpm>
 
 
+                <p>Originally, I wanted to write it like this: </p>
+
+               
+                <xpm>
+                    <pre>
+                    for(let squaredNums of numbers){
+                        console.log(Math.pow(numbers));
+            }
+                </pre>
+            </xpm>
+
+                <p>Since the variable already existing was called &#39;numbers&#39;, then (in terms of singular and
+                    plurals) it makes sense to call it <strong><em>number</em></strong> of
+                    <strong><em>numbers</em></strong>. Also don&#39;t need to use the Math.() method when you are just
+                    squaring (multiplying) a number by itself. Try to keep it simple.
+                </p>
+                <p>In this example, I think I would have to consider what defines &#39;elegant&#39; code.</p>
+                <p><strong>Elegant code uses cleverness to accomplish something in much less code than most people would
+                        think possible, but in a way that&#39;s readable and obvious in hindsight and doesn&#39;t look
+                        like code golf.</strong></p>
+                <p>According to this definition, I would say that the number * number solution is much more elegant than
+                    applying the Math.pow method, just because the first solution is more intuitive and appears to be
+                    simpler.</p>
+                <ol>
+                    <li><strong>Solved a problem in an elegant way.</strong></li>
+                    <li>I got help and then understood <em>how</em> this solution works.</li>
+                </ol>
+                <p><strong>In both cases:</strong></p>
+                <ul>
+                    <li><strong>What was the problem?</strong></li>
+                    <li>My problem is that I&#39;m half-way through a JS course online, so I do have some basic
+                        understandings of JS, yet it&#39;s not a Big Picture understanding. I am missing some
+                        fundamental key blocks of knowledge, which makes problem solving that much harder under the
+                        imposed time constraints. </li>
+                    <li>What I&#39;ve been doing: alternating between the Katas on this course and continuing to
+                        progress through the JS course I&#39;d taken before starting this bootcamp, so as not to confuse
+                        myself. I know once I&#39;ve finished this JS course, I will feel better. </li>
+                    <li>Thus, the problem is trying to solve problems without a strong enough foundation - and accepting
+                        and navigating that as best as I can, anyway. </li>
+                    <li><strong>What problem solving techniques did you use?</strong></li>
+                    <li>Google</li>
+                    <li>Continue with the course, talk to peers.</li>
+                    <li><a href="https://replit.com/@jemma-dixon/Manipulating-JS-Objects#index.js">Here is a link to my
+                            replit page: Manipulating JS Objects</a></li>
+                    <li><a href="https://www.notion.so/Manipulating-JS-Objects-Replit-86820f3e6b20424792cd87955d0d8187">Please
+                            click here for my answers - This link leads to my Notion Notes on Manipulating JS
+                            Objects</a></li>
+                    <li><strong>How did you feel throughout the process?</strong></li>
+                    <li>Frustrated and persistent anyway, despite feeling emotional at times.</li>
+                    <li><strong>What did you learn?</strong></li>
+                    <li>Breaks are not a luxury, they are necessary and often help with problem-solving.</li>
+                </ul>
+                <p><strong>Reflect on how confident you feel using the problem-solving techniques and process:</strong>
+                </p>
+                <ul>
+                    <li><strong>Pseudocode</strong> ☑️</li>
+                    <li><strong>The rubber ducky method</strong> ☑️</li>
+                    <li>
+                        <p><strong>Reading error messages</strong> ☑️</p>
+                    </li>
+                    <li>
+                        <p>Console.logging ☑️</p>
+                    </li>
+                    <li>Googling ☑️</li>
+                    <li>Trying something ☑️</li>
+                    <li>Asking your peers for help ☑️</li>
+                    <li>Asking coaches for help ☑️</li>
+                    <li>Improving your process with reflection ☑️</li>
+                </ul>
+                <h3 id="-pseudocode-from-dev-academy-"><strong>Pseudocode (From Dev Academy)</strong></h3>
+                <ul>
+                    <li>
+                        <p>Many of the techniques mentioned above can be applied to all sorts of (non-technical)
+                            problems, but pseudocode is coding-specific and incredibly useful to help you think through
+                            your code.</p>
+                        <p> <strong>Pseudocode is not actual code. Rather, <em>pseudocode is composed of comments that
+                                    tell you how the code will eventually look.</em></strong> </p>
+                        <p> It is informal, plainly written steps that form the rough draft or outline of your code.</p>
+                        <p> Pseudocoding involves taking a little time before you get into writing the code to break
+                            down your plan into small steps. This means you don&#39;t have to worry about making the
+                            whole thing work at once, but can instead focus on just coding one step at a time. This can
+                            be useful for helping you break down a complicated problem, but can also be used if one
+                            developer needs to leave instructions for another to complete the code later.</p>
+                        <p> Because pseudocode is the steps rather than the code itself, you don&#39;t need to include
+                            the fine details of what needs to happen. It&#39;s a bit like recalling a recipe you know,
+                            you don&#39;t need all the details immediately, you just need to know the ingredients needed
+                            and can work the rest out when you get to it. For example, to make brownies:</p>
+
+                      
+                                <xpm>
+                                    <pre>
+                                    // put butter, sugar, and cocoa in bowl and then microwave
+                                    // add eggs and vanilla and mix through
+                                    // add flour and mix until thick
+                                    // bake!
+                                
+                                </pre>
+                            </xpm>
 
 
-                <!-- Footer -->
-                <footer id="footer">
-                    <ul class="icons">
-                        <li><a href="https://twitter.com/Jemma97912606" class="icon brands fa-twitter"><span
-                                    class="label">Twitter</span></a></li>
-                        <li><a href="https://www.instagram.com/jemrosedix/" class="icon brands fa-instagram"><span
-                                    class="label">Instagram</span></a></li>
-                        <li><a href="https://github.com/jemma-dixon" class="icon brands fa-github"><span
-                                    class="label">Github</span></a>
-                        </li>
-                        <li><a href="https://www.linkedin.com/in/jemma-dixon-134615135/"
-                                class=" icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
-                    </ul>
+                        <p> You can see that we didn&#39;t include any details, just general steps.</p>
+                        <p> Once you have written pseudocode, you may find you need to change the order of steps, or you
+                            might discover that you have forgotten some and need to add them in - and that&#39;s okay!
+                            This is only a first draft and it will inevitably change as you come to write the code
+                            itself.</p>
+                    </li>
+                </ul>
+                <p><strong>Another simplified definition of Pseudocode:</strong></p>
+                <blockquote>
+                    <p>Ps<em>eu</em>docode is just any representation of code that isn&#39;t actually code (<a
+                            href="https://en.wikipedia.org/wiki/Pseudo-">the pseudo prefix</a> makes words like that)
+                    </p>
+                </blockquote>
+                <p>So for example, while I might say the following in code...</p>
+                
+               
+                    <xpm>
+                        <pre>
+                        for(let i = 0; i < 10; i++) {
+                            console.log(i);
+                          }
+                        </pre>
+                    </xpm>
+                    
 
-                </footer>
+                <p>We could also express it in more human-readable pseudocode...</p>
 
-            </div>
+                <xpm>
+                    <pre>
+                loop from 0 to 10
+                print loop index
+            </pre>
+        </xpm>
 
-            <!-- Scripts -->
-            <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/jquery.dropotron.min.js"></script>
-            <script src="assets/js/jquery.scrollex.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+                <p>There is no specific syntax for pseudocode, it literally can be anything you want.</p>
+                <h3 id="-the-rubber-ducky-method-"><strong>The rubber ducky method</strong></h3>
+
+
+
+                <span class="image featured"><img
+                        src="https://images.unsplash.com/photo-1603736087997-5daec6092347?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"
+                        alt="duck">
+                    </img></span>
+
+
+
+                <ul>
+                    <li>The name is in reference to the book <strong><em>The Pragmatic Programmer</em></strong> where a
+                        programmer would debug code by explaining it, word by word, to his rubber duck.</li>
+                    <li>&quot;I don&#39;t have a rubber duck, but I&#39;ll start explaining the code to my wife, who has
+                        no idea what I&#39;m talking about, and eventually figure it out. I call it using my sounding
+                        board to bounce ideas off.&quot;</li>
+                    <li>&quot;In general, explaining something to someone else is a good way to improve your own
+                        understanding of it. It forces you to think about the parts that you don&#39;t really
+                        understand, pointing out the gaps in your knowledge or reasoning.&quot;</li>
+                </ul>
+                <h3 id="-reading-error-messages-"><strong>Reading error messages</strong></h3>
+                <p><a href="https://codeburst.io/javascript-error-messages-debugging-d23f84f0ae7c">JavaScript error
+                        messages &amp;&amp; debugging</a></p>
+
+
+                <div class="box">
+
+
+
+
+                    <!-- Footer -->
+                    <footer id="footer">
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/Jemma97912606" class="icon brands fa-twitter"><span
+                                        class="label">Twitter</span></a></li>
+                            <li><a href="https://www.instagram.com/jemrosedix/" class="icon brands fa-instagram"><span
+                                        class="label">Instagram</span></a></li>
+                            <li><a href="https://github.com/jemma-dixon" class="icon brands fa-github"><span
+                                        class="label">Github</span></a>
+                            </li>
+                            <li><a href="https://www.linkedin.com/in/jemma-dixon-134615135/"
+                                    class=" icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+                        </ul>
+
+                    </footer>
+
+                </div>
+
+                <!-- Scripts -->
+                <script src="assets/js/jquery.min.js"></script>
+                <script src="assets/js/jquery.dropotron.min.js"></script>
+                <script src="assets/js/jquery.scrollex.min.js"></script>
+                <script src="assets/js/browser.min.js"></script>
+                <script src="assets/js/breakpoints.min.js"></script>
+                <script src="assets/js/util.js"></script>
+                <script src="assets/js/main.js"></script>
 
 </body>
 
